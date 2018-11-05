@@ -17,6 +17,6 @@ class TestBasics(unittest.TestCase):
     def test_divide(self):
         result = rpn.calculate("6 3 /")
         self.assertEqual(2, result)
-    def test_expon(self):
+    def test_exponent(self):
         result = rpn.calculate("2 3 ^")
         self.assertEqual(8, result)
