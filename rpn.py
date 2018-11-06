@@ -35,5 +35,12 @@ def main():
         print(Fore.RED)
         print(result)
 
+def randomfunc():
+    x = 73
+    random = x * 50
+
+    if random == 20:
+        print ("Wow!")
+
 if __name__ == '__main__':
     main()
