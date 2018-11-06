@@ -2,5 +2,7 @@ language: python
 python:
   - "3.5"
 script:
+  - pip install coverage
   - pip install colorama
-  - make
+  - coverage run test_rpn.py
+  - coverage report -m
