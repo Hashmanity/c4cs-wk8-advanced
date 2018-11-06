@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/python
 import operator
+from colorama import Fore, Back, Style
 
 
 operators = {
@@ -29,8 +30,10 @@ def calculate(myarg):
 
 def main():
     while True:
-        result = calculate(input("rpn calc> "))
-        print("Result: ", result)
+        result = calculate(raw_input("rpn calc> "))
+        print(Fore.BLUE + "Result: ")
+        print(Fore.RED)
+        print(result)
 
 if __name__ == '__main__':
     main()
